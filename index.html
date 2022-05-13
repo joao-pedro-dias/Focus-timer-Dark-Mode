@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Focus timer - Dark</title>
+
+</head>
+<body>
+    <div class="toggleMode">
+        <button class="light">
+            <img src="images/toggleMode/light.svg" alt="imagem de sol">
+        </button>
+
+        <button class="dark hide"> 
+            <img src="images/toggleMode/dark.svg" alt="imagem de lua">
+        </button>
+    </div>
+    
+    <div class="container">
+        <div class="grid-left">
+            <div class="timer">
+                <span>25</span>
+                <span>:</span>
+                <span>00</span>
+            </div>
+
+            <div>
+                <button id="play" class="display">
+                    <img src="images/display/button-play.svg" alt="botão de iniciar timer">
+                </button>
+    
+                <button id="pause" class="display hide">
+                    <img src="images/display/button-pause.svg" alt="botão de pausar o timer">
+                </button>
+    
+                <button id="reset" class="display">
+                    <img src="images/display/button-reset.svg" alt="botão de resetar o timer">
+                </button>
+    
+                <button id="add" class="display">
+                    <img src="images/display/button-add.svg" alt="botão de somar">
+                </button>
+    
+                <button id="sub" class="display">
+                    <img src="images/display/button-sub.svg" alt="botão de subtrair">
+                </button>
+            </div>
+        </div>
+
+        <div class="grid-right">
+            <button id="cardFlorest">
+                <img class="cards" src="images/cards/florest.svg" alt="Cartão com imagem de árvore">
+            </button>
+
+            <button id="cardRain">
+                <img class="cards" src="images/cards/rain.svg" alt="Cartão com imagem de chuva">
+            </button>
+
+            <button id="CardCoffeShop">
+                <img class="cards" src="images/cards/coffee-shop.svg" alt="Cartão com imagem de cafeteria">
+            </button>
+
+            <button id="cardFire">
+                <img class="cards" src="images/cards/fire.svg" alt="Cartão com imagem de fogo">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
