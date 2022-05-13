@@ -26,6 +26,7 @@ export default function Timer({
         if(displayMinutes.textContent < 60){
             let result = Number(displayMinutes.textContent) + Number(fiveMinutes)
             displayMinutes.textContent = String(result).padStart(2, "0")
+            updateTimer(displayMinutes.textContent, 0)
         } else{
             return
         }
@@ -35,6 +36,7 @@ export default function Timer({
         if(displayMinutes.textContent > 0){
             let result = Number(displayMinutes.textContent) - Number(fiveMinutes)
             displayMinutes.textContent = String(result).padStart(2, "0")
+            updateTimer(displayMinutes.textContent, 0)
         } else {
             return
         }
