@@ -6,8 +6,38 @@ import {
     displayPlay,
     displayMinutes,
     displaySeconds,
-    fiveMinutes
+    fiveMinutes,
+    html,
+    buttonLight,
+    buttonDark,
+    audioFlorest,
+    audioRain,
+    audioCoffeeShop,
+    audioFire,
+    florestDisplay,
+    rainDisplay,
+    coffeeShopDisplay,
+    fireDisplay
 } from "./elements.js"
+import DarkMode from './darkMode.js'
+import Sounds from './sounds.js'
+
+const darkMode = DarkMode({
+    html,
+    buttonLight,
+    buttonDark
+})
+
+const sounds = Sounds({
+    audioFlorest,
+    audioRain,
+    audioCoffeeShop,
+    audioFire,
+    florestDisplay,
+    rainDisplay,
+    coffeeShopDisplay,
+    fireDisplay
+})
 
 const displays = Displays({
     displayPause,
@@ -21,8 +51,6 @@ const timer = Timer({
     resetDisplay: displays.reset
 })
 
-// const sound = Sound()
-
-Events({displays, timer})
+Events({displays, timer, darkMode, sounds})
 
 

@@ -9,12 +9,39 @@
     --font-family: 'Roboto', sans-serif;
 }
 
+html{
+    --bg: #FCFCFC;
+    --color-span: #323238;
+    --display-colors: #323238;
+    --display-hover: #02799D
+}
+
+body{
+    background-color: var(--bg);
+}
+
 .hide{
     display: none;
 }
 
-img{
+.display svg {
     cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
+
+.display svg path {
+    fill: var(--display-colors);
+}
+
+.display svg:hover path {
+    fill: var(--display-hover);
+}
+
+.button-pressed img{
+    background: #02799D;
 }
 
 button{
@@ -59,7 +86,7 @@ button{
     font-size: 13.0rem;
     font-family: var(--font-family);
     font-weight: 500;
-    color: #323238;
+    color: var(--color-span);
 }
 
 .display{
